@@ -19,10 +19,8 @@
 2. [주요 기능 (Key Features)](#-주요-기능-key-features)
 3. [기술 스택 (Tech Stack)](#-기술-스택-tech-stack)
 4. [서비스 흐름도 (User Flow)](#-서비스-흐름도-user-flow)
-5. [디렉토리 구조 (Directory Structure)](#-디렉토리-구조-directory-structure)
-6. [시작 가이드 (Getting Started)](#-시작-가이드-getting-started)
-7. [환경 변수 설정 (.env)](#-환경-변수-설정-env)
-8. [팀원 및 담당 역할](#-팀원-및-담당-역할)
+5. [시작 가이드 (Getting Started)](#-시작-가이드-getting-started)
+6. [환경 변수 설정 (.env)](#-환경-변수-설정-env)
 
 ---
 
@@ -30,6 +28,8 @@
 
 **GiftTrip**은 복잡한 해외 여행 계획 수립 과정을 혁신적으로 단축해 주는 **스마트 여행 플래너**입니다.
 
+* 📅 **개발 기간**: 2025.09.03 ~ 2025.11.12
+* 👥 **참가 인원**: 3명
 * 🇯🇵 🇨🇳 🇹🇼 🇺🇸 🇨🇦 🇫🇷 🇬🇧 🇩🇪 🇮🇹 🇪🇸 등 **주요 10개국** 여행 데이터를 기반으로 동작합니다.
 * 동행자, 예산, 일정, 여행 스타일에 따른 **OpenAI LLM AI 코스 추천**을 지원합니다.
 * 국가별 비자 정보 및 준비물이 자동으로 정리된 **여행 체크리스트 모달 & PDF 다운로드**를 제공합니다.
@@ -92,35 +92,6 @@
 
 ---
 
-## 📁 디렉토리 구조 (Directory Structure)
-
-```
-GiftTrip/
-├── JSX/                       # React 프론트엔드 컴포넌트
-│   ├── GiftTripPages00.jsx    # [Page 00] Destination Selection
-│   ├── GiftTripPages01.jsx    # [Page 01] Trip Options & Preferences
-│   ├── GiftTripPages02.jsx    # [Page 02] City & AI Course Selection
-│   ├── GiftTripPages03.jsx    # [Page 03] Daily Detailed Schedule
-│   ├── GiftTripPages04.jsx    # [Page 04] Spots / Food / Stay / Activity List
-│   ├── GiftTripPages05.jsx    # [Page 05] Detailed Itinerary & Review Engine
-│   ├── GiftTripPages06.jsx    # [Page 06] Packing Checklist Generator
-│   ├── GiftTripPages07.jsx    # [Page 07] Export & Email Share
-│   ├── ChecklistModal.jsx     # Checklist Modal Window
-│   └── ChecklistData.jsx      # Common & Country Checklist Data
-├── CSS/                       # CSS 스타일시트 (페이지별 & 공통 스타일)
-├── nodejs/                    # Node.js Express 백엔드 API & 라우터
-│   ├── server.cjs             # 메인 백엔드 서버 (Port 3000)
-│   ├── ReviewEngine.cjs       # OpenAI 연동 & Review Cache Engine
-│   ├── page7Share.cjs         # 메일 발송 API 라우터 (PDF 첨부)
-│   ├── mailer.cjs             # Nodemailer Transporter 설정
-│   ├── AdminPage.cjs          # 관리자 대시보드 라우터
-│   └── AdminLogger.cjs        # API Request & Activity Logging
-├── public/                    # 국가별(JP, CN, US, IT 등) 이미지 정적 자원 & index.html
-└── README.md                  # 프로젝트 포트폴리오 문서
-```
-
----
-
 ## 🚀 시작 가이드 (Getting Started)
 
 ### 1. Repository 클론
@@ -165,14 +136,6 @@ SMTP_PASS=your_app_password
 REVIEW_CACHE_TTL_MS=900000
 REVIEW_CACHE_MAX=500
 ```
-
----
-
-## 👥 팀원 및 담당 역할
-
-* **SeokjunBae01** ([GitHub](https://github.com/SeokjunBae01)) - 서비스 리드 & 풀스택 개발
-* **동윤** - 상세보기 구현, PDF 체크리스트 (ChecklistData / ChecklistModal), Page 06 ~ 07 개발
-* **호찬** - Page 02 ~ 07 UI/UX 설계, CSS 스타일링, Node.js API 라우터 (GiftTripPages06.cjs, Manager.cjs)
 
 ---
 
