@@ -96,7 +96,7 @@
 
 ### 1. Repository 클론
 ```bash
-git clone https://github.com/SeokjunBae01/GiftTrip.git
+git clone https://github.com/leedongyun01/GiftTrip.git
 cd GiftTrip
 ```
 
