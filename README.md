@@ -2,6 +2,7 @@
 
 > **"당신만을 위한 맞춤형 해외 여행 일정 & AI 코스 추천 서비스"**  
 > **GiftTrip**은 사용자 취향, 구성원, 예산 및 여행 스타일에 맞춰 **최적의 10개국 여행 코스**를 추천하고, **PDF 일정표 공유 & 체크리스트**까지 일괄 제공하는 **맞춤형 여행 플랫폼**입니다.
+>
 > [졸업논문](https://github.com/leedongyun01/GiftTrip/blob/main/Thesis_GiftTrip.hwp)
 
 <br/>
